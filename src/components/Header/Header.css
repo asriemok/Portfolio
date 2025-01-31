@@ -1,0 +1,140 @@
+/* General Styles */
+.gradient-background {
+  background: linear-gradient(45deg, #6164ff, #ff6f61, #de4463, #2a2a72);
+  color: white;
+  padding: 20px;
+ 
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-link {
+  color: #030303;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+  color: #f8f9fa;
+}
+
+.active {
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.theme-toggle {
+  color: #030303;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #121213;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff6f61, #de4463, #2a2a72);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-header {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .header {
+  background-color: #333;
+  color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .nav-link {
+  color: #f8f9fa;
+}
+
+body.dark-mode .nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+body.dark-mode .theme-toggle {
+  color: #f8f9fa;
+}
+
+body.dark-mode .theme-toggle:hover {
+  color: #ff9800;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Media Queries */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .nav {
+    gap: 2rem;
+  }
+
+  .theme-toggle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .theme-toggle {
+    font-size: 0.8rem;
+    align-self: flex-end; /* Align the toggle button to the right on mobile */
+  }
+}

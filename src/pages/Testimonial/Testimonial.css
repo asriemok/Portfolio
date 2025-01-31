@@ -1,0 +1,27 @@
+.testimonials {
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    max-width: 1200px;
+  }
+  
+  .testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .testimonial-card p {
+    margin: 0;
+  }
+  

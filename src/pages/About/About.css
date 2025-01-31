@@ -1,0 +1,215 @@
+/* Base Styles (Light Mode) */
+.about {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff; /* Light background for light mode */
+}
+.dark-mode .about {
+  background-color: #333; /* Dark background for dark mode */
+  color: #fff;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: #4CAF50; /* Accent color */
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile-info,
+.skills {
+  flex: 1;
+  min-width: 300px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  border: 5px solid #4CAF50; /* Adds a border with your accent color */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.bio h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4CAF50; /* Accent color */
+}
+
+.bio p {
+  margin-bottom: 15px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Accent color */
+}
+.dark-mode .skills h2  {
+  background-color: #333;
+  color: #fff;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #4CAF50; /* Accent color for the list items */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.dark-mode .skills ul li {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.skills ul li:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.highlight {
+  color: #4CAF50; /* Accent color */
+  font-weight: bold;
+}
+
+/* Dark Mode Styles */
+[data-theme='dark'] .about {
+  color: #e0e0e0; /* Light text color for dark mode */
+  background-color: #333; /* Dark background for dark mode */
+}
+
+[data-theme='dark'] .intro h1 {
+  color: #4CAF50; /* Accent color remains the same */
+}
+
+[data-theme='dark'] .intro p {
+  color: #e0e0e0; /* Light text color for dark mode */
+}
+
+[data-theme='dark'] .profile-image {
+  border-color: #4CAF50; /* Accent color remains the same */
+}
+
+[data-theme='dark'] .bio h2 {
+  color: #4CAF50; /* Accent color remains the same */
+}
+
+[data-theme='dark'] .skills ul li {
+  background-color: #333; /* Dark background for list items in dark mode */
+  color: #e0e0e0; /* Light text color for dark mode */
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info,
+  .skills {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .bio h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills ul li {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bio h2 {
+    font-size: 1.25rem;
+  }
+
+  .skills h2 {
+    font-size: 1.25rem;
+  }
+
+  .skills ul li {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}

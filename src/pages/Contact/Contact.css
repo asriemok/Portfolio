@@ -1,0 +1,142 @@
+/* Ensure the body takes up the full height of the viewport */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout for the page */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make header and footer flex items */
+header, footer {
+  flex-shrink: 0;
+}
+
+/* Ensure the contact form container takes up the available space */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Basic styles for the Contact page */
+.contact {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  overflow-y: auto; /* Allow scrolling within the form */
+}
+
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: #fff;
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 50px;
+  color: #333;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 91, 187, 0.2);
+}
+
+/* Dark mode styles */
+.dark-mode .contact {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+  background-color: #444;
+  color: #fff;
+  border-color: #666;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+  background-color: #555;
+  border-color: #1e90ff;
+}
+
+.dark-mode .submit-button {
+  background-color: #1e90ff;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(30, 144, 255, 0.1);
+}
+
+.dark-mode .submit-button:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 6px rgba(30, 144, 255, 0.2);
+}
+
+/* .dark-mode .form-group input,
+.form-group textarea{
+  color: #fff;
+}  */
+
+.dark-mode .form-group label {
+  color: #fff;
+}
+
+.dark-mode h1{
+  color: #fff;
+}

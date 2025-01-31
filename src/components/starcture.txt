@@ -1,0 +1,16 @@
+src/
+│
+├── assets/          # Images, fonts, etc.
+├── components/      # Reusable components
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── ProjectCard.js
+│   └── ...
+├── pages/           # Pages for routing
+│   ├── Home.js
+│   ├── About.js
+│   ├── Projects.js
+│   ├── Contact.js
+│   └── ...
+├── App.js           # Main app component
+└── index.js         # Entry point

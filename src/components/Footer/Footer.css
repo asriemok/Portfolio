@@ -1,0 +1,48 @@
+.footer {
+  background-color: #333; /* Adjust background color as needed */
+  color: #fff; /* Adjust text color as needed */
+  height: 60px; /* Set a fixed height for the footer */
+  padding: 0 20px; /* Padding for left and right */
+  display: flex;
+  justify-content: center; /* Center the footer content horizontally */
+  align-items: center; /* Center items vertically within the footer */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the height */
+  position: fixed; /* Make the footer fixed at the bottom of the page */
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode .footer {
+  background-color: #333;
+  color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width to ensure space is utilized */
+  max-width: 1200px; /* Optional: limit the width of the footer content */
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center; /* Ensure icons and text are aligned vertically */
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 15px; /* Space between icons */
+  font-size: 20px; /* Adjust icon size */
+  text-decoration: none;
+}
+
+.footer-right {
+  margin-left: auto; /* Pushes copyright text to the right side */
+}
+
+.footer-right p {
+  margin: 0;
+}

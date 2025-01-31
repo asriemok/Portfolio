@@ -1,0 +1,23 @@
+/* src/components/ContactInfo.css */
+
+.contact-info {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
